@@ -1,0 +1,133 @@
+.headernavLinks {
+    font-family: "Lato", serif;
+    font-weight: medium;
+    font-size: 18px;
+    line-height: auto;
+    letter-spacing: 3%;
+    color: #959595;
+    /* margin-right: 5px; */
+}
+
+.headernavLinks:hover {
+    transition: 0.8s;
+    color: #FD6F00;
+    font-size: 22px;
+}
+
+.landingIntro {
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 3%;
+    text-align: start;
+    color: #707070;
+}
+
+.landingIntroSpan {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.landingRoleTitle {
+    font-family: "Lato", serif;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: start;
+    color: #CA5900;
+    line-height: auto;
+}
+
+.landingContactButton {
+    color: rgb(191, 186, 186);
+    padding: 3px 10px;
+    border: solid 1px white;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 15px;
+    background-color: transparent;
+}
+
+.landingContactButton:hover{
+    color: white;
+    background-color: black;
+}
+
+.landingCVButton {
+    font-family: "Lato", serif;
+    padding: 12px 40px;
+    border: solid;
+    border-radius: 8px;
+    color: #959595;
+    transition: 1s;
+}
+
+.landingCVButton:hover{
+    color: white;
+    background-color: #FD6F00;
+}
+
+.landingyearsHeading {
+    font-family: "Lato", serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #FD6F00;
+    background-color: rgba(246, 246, 246, 0.456);
+}
+
+.landingyearsHeadingSpan {
+    font-size: 18px;
+    font-weight: bold;
+    color: #DFDFDF;
+    background-color: transparent;
+}
+
+.aboutMePara{
+    font-family: "Lato", serif;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: medium;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: #959595;
+}
+
+.contactSendButton {
+    font-family: "Lato", serif;
+    padding: 12px 40px;
+    border: solid;
+    border-radius: 8px;
+    color: #FD6F00;
+    transition: 1s;
+}
+
+.contactSendButton:hover{
+    color: white;
+    background-color: #FD6F00;
+}
+
+.projectDesc {
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 3%;
+    text-align: justify;
+    color: white;
+    margin-top: 5%;
+}
+/* text-dark bg-light rounded fs-5 fw-bold */
+.projectsFilterButton{
+color: black;
+background-color: whitesmoke;
+border-radius: 5px;
+font-size: 18px;
+font-weight: bold;
+width: 100px;
+border: none;
+padding: 2px 0px 2px 0px;
+}
+
+.projectsFilterButton:hover{
+    color: whitesmoke;
+
+    background-color: black;
+}
