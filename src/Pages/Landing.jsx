@@ -21,6 +21,7 @@ import lms from '../assets/lms.png'
 import lmsv from '../assets/lmsv.mp4'
 import recipev from '../assets/recipev.mp4'
 import weatherv from '../assets/weatherv.mp4'
+import cv from "../assets/ASWIN SASEENDRAN (MERN FULL STACK DEVELOPER) PROFESSIONAL_RESUME.pdf"
 
 const Landing = () => {
   const [myProjects] = useState([
@@ -122,7 +123,7 @@ const Landing = () => {
             </div>
             {/* Download CV  */}
             <div className='mt-5'>
-              <a href="../assets/ASWIN SASEENDRAN (MERN FULL STACK DEVELOPER) PROFESSIONAL_RESUME.pdf" download="ASWIN SASEENDRAN (MERN FULL STACK DEVELOPER) PROFESSIONAL_RESUME.pdf"><button className={myStyle.landingCVButton}>Download CV</button></a>
+              <a href={cv} download="ASWIN SASEENDRAN (MERN FULL STACK DEVELOPER) PROFESSIONAL_RESUME.pdf"><button className={myStyle.landingCVButton}>Download CV</button></a>
             </div>
             {/* Experience */}
             <div style={{ backgroundColor: "rgba(246, 246, 246, 0.11)", maxWidth: "900px" }} className='mt-5 p-3 rounded d-flex justify-content-evenly align-items-center d-none'>

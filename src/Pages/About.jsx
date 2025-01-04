@@ -1,6 +1,7 @@
 import React from 'react'
 import myStyle from '../Style.module.css'
 import profile from '../assets/profile.png'
+import cv from "../assets/ASWIN SASEENDRAN (MERN FULL STACK DEVELOPER) PROFESSIONAL_RESUME.pdf"
 
 const About = () => {
   return (
@@ -20,7 +21,7 @@ const About = () => {
           <p className={myStyle.aboutMePara}>My strengths lie in being a quick learner, highly detail-oriented, and focused, which enables me to adapt to new technologies and deliver reliable results on time. Although I sometimes overanalyze situations, I’m actively improving my decision-making process to balance thoroughness with efficiency.</p>
           <p className={myStyle.aboutMePara}>When I'm not coding, I enjoy watching movies and playing games, which keep me relaxed and spark creativity. I’m excited to use my skills, enthusiasm, and dedication to build impactful projects and grow as a professional.</p>
           <div className='mt-3'>
-            <a href="../assets/ASWIN SASEENDRAN (MERN FULL STACK DEVELOPER) PROFESSIONAL_RESUME.pdf" download="ASWIN SASEENDRAN (MERN FULL STACK DEVELOPER) PROFESSIONAL_RESUME.pdf"><button className={myStyle.landingCVButton}>Download CV</button></a>
+            <a href={cv} download="ASWIN SASEENDRAN (MERN FULL STACK DEVELOPER) PROFESSIONAL_RESUME.pdf"><button className={myStyle.landingCVButton}>Download CV</button></a>
           </div>
         </div>
       </div>
