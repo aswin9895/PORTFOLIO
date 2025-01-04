@@ -8,8 +8,9 @@ import Header from './Components/Header'
 import Skills from './Pages/Skills'
 import Footer from './Components/Footer'
 import ScrollToTop from './Components/ScrollToTop'
-function App() {
+import Pnf from './Pages/Pnf'
 
+function App() {
   return (
     <>
     <Header/>
@@ -20,6 +21,7 @@ function App() {
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/skills" element={<Skills />} />
+      <Route path="/*" element={<Pnf />} />
     </Routes>
     <Footer/>
     </>
