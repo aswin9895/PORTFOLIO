@@ -7,12 +7,13 @@ import Contact from './Pages/Contact'
 import Header from './Components/Header'
 import Skills from './Pages/Skills'
 import Footer from './Components/Footer'
-
+import ScrollToTop from './Components/ScrollToTop'
 function App() {
 
   return (
     <>
     <Header/>
+    <ScrollToTop/>
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/about" element={<About />} />

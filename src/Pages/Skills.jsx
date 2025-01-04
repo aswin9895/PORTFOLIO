@@ -37,7 +37,7 @@ const Skills = () => {
             </div>
             <p className="text-light fw-bold mt-3 fs-5">CSS</p>
           </div>
-          <div className="col-sm-12 col-md-4 col-lg-2"> 
+          <div className="col-sm-12 col-md-4 col-lg-2">
             <div style={{ width: 150, height: 150, position: "relative", margin: "0 auto" }}>
               {/* Circular Progress Bar */}
               <CircularProgressbar value={80} styles={buildStyles({ pathColor: "#FD6F00", trailColor: "#d6d6d6", strokeLinecap: "round" })} />

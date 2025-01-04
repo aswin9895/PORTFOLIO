@@ -1,6 +1,6 @@
 import React from 'react'
 import myStyle from '../Style.module.css'
-import profile from '../assets/profile1.png'
+import profile from '../assets/profile.png'
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
       </div>
       <div className='mt-5 row justify-content-center align-items-center'>
         <div style={{ textAlign: "center" }} className='col-lg-4'>
-          <img className='img img-fluid mt-3' width={'400px'} src={''} alt="my-image" />
+          <img style={{borderBottomLeftRadius:"90px",borderTopRightRadius:"90px"}} className='img img-fluid mt-3' width={'400px'} src={profile} alt="my-image" />
         </div>
         <div className='col'></div>
         <div className='col-lg-7'>

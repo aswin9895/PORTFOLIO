@@ -6,25 +6,27 @@ import js from '../assets/javascript.png'
 import react from '../assets/react.png'
 import node from '../assets/nodejs.png'
 import mongoDb from '../assets/mongo-db.png'
+import profile from '../assets/profile.png'
 import bootstrap from '../assets/bootstrap.webp'
 import tailwind from '../assets/tailwind.webp'
 import git from '../assets/github.webp'
 import figma from '../assets/figma.webp'
 import weather from '../assets/weather.png'
 import recepie from '../assets/recepie.png'
-import employee from '../assets/recepie.png'
-import profile from '../assets/profile1.png'
 import { Button, Card, Form, Modal } from 'react-bootstrap'
 import emailjs from '@emailjs/browser';
 import { Flip, ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom'
 import lms from '../assets/lms.png'
+import lmsv from '../assets/lmsv.mp4'
+import recipev from '../assets/recipev.mp4'
+import weatherv from '../assets/weatherv.mp4'
 
 const Landing = () => {
   const [myProjects] = useState([
-    { id: 16, name: 'LIBRARY MANAGEMENT SYSTEM', description: 'The Library Management System is a comprehensive web application designed to simplify library operations by managing users, books, and transactions such as issuing and returning books. Built with React.js, Javascript, MongoDB, and Node.js, the system offers robust functionality and an intuitive interface for both librarians and patrons. It allows users to catalog books with details like titles, categories, manage user accounts, including automated rent calculations based on loan duration. The application includes a responsive frontend built with React.js and Bootstrap, ensuring accessibility across various devices. Authentication is managed through JWT Middleware, with MongoDB as the database. This Library Management System provides a seamless and efficient solution for organizing library resources, enhancing user experience, and streamlining daily operations.', github: "https://github.com/aswin9895/LIBRARY-MANAGEMENT-PROJECT", gitback: "https://github.com/aswin9895/LIBRARY-MANAGEMENT-SERVER", live: "https://library-management-project-9f1n.vercel.app/", img: lms, frntEnd: ["REACT", "JAVASCRIPT"], backEnd: ["NODE.JS", "EXPRESS.JS"], Db: ["MONGO-DB"] },
-    { id: 13, name: 'RECEPIE APP', description: 'The Recepie App is a modern web application designed to provide users with a diverse collection of recipes, complete with detailed cooking instructions and ingredient lists. Built using React and Vite, the app delivers a responsive and interactive user experience, ensuring seamless functionality across devices. Users can search for recipes by keywords, making it easy to find specific dishes, while the clean and intuitive design enhances navigation. The app is visually appealing and user-friendly.', github: "https://github.com/aswin9895/RECEPIE_APP", live: "https://recepie-app-steel.vercel.app/", img: recepie, frntEnd: ["REACT", "JAVASCRIPT"] },
-    { id: 12, name: 'WEATHER_APP', description: 'The "WEATHER_APP" project is a responsive and interactive web application designed to provide real-time weather updates for any city worldwide. Built using React and Vite, the application fetches weather data from the OpenWeatherMap API, ensuring accurate and up-to-date information. Users can input a city name to receive the current temperature and weather conditions presented in a clean and intuitive interface.', github: "https://github.com/aswin9895/WEATHER_APP", live: "https://weather-app-jun24.netlify.app/", img: weather, frntEnd: ["REACT", "JAVASCRIPT"] }
+    { id: 16, name: 'LIBRARY MANAGEMENT SYSTEM', description: 'The Library Management System is a comprehensive web application designed to simplify library operations by managing users, books, and transactions such as issuing and returning books. Built with React.js, Javascript, MongoDB, and Node.js, the system offers robust functionality and an intuitive interface for both librarians and patrons. It allows users to catalog books with details like titles, categories, manage user accounts, including automated rent calculations based on loan duration. The application includes a responsive frontend built with React.js and Bootstrap, ensuring accessibility across various devices. Authentication is managed through JWT Middleware, with MongoDB as the database. This Library Management System provides a seamless and efficient solution for organizing library resources, enhancing user experience, and streamlining daily operations.', github: "https://github.com/aswin9895/LIBRARY-MANAGEMENT-PROJECT", gitback: "https://github.com/aswin9895/LIBRARY-MANAGEMENT-SERVER", live: "https://library-management-project-9f1n.vercel.app/", img: lms, video: lmsv, frntEnd: ["REACT", "JAVASCRIPT"], backEnd: ["NODE.JS", "EXPRESS.JS"], Db: ["MONGO-DB"] },
+    { id: 13, name: 'RECEPIE APP', description: 'The Recepie App is a modern web application designed to provide users with a diverse collection of recipes, complete with detailed cooking instructions and ingredient lists. Built using React and Vite, the app delivers a responsive and interactive user experience, ensuring seamless functionality across devices. Users can search for recipes by keywords, making it easy to find specific dishes, while the clean and intuitive design enhances navigation. The app is visually appealing and user-friendly.', github: "https://github.com/aswin9895/RECEPIE_APP", live: "https://recepie-app-steel.vercel.app/", img: recepie, video: recipev, frntEnd: ["REACT", "JAVASCRIPT"] },
+    { id: 12, name: 'WEATHER_APP', description: 'The "WEATHER_APP" project is a responsive and interactive web application designed to provide real-time weather updates for any city worldwide. Built using React and Vite, the application fetches weather data from the OpenWeatherMap API, ensuring accurate and up-to-date information. Users can input a city name to receive the current temperature and weather conditions presented in a clean and intuitive interface.', github: "https://github.com/aswin9895/WEATHER_APP", live: "https://weather-app-jun24.netlify.app/", img: weather, video: weatherv, frntEnd: ["REACT", "JAVASCRIPT"] }
   ])
   const [name, setName] = useState('')
   const [Email, setEmail] = useState('')
@@ -148,7 +150,7 @@ const Landing = () => {
           </div>
           <div></div>
           <div>
-            <img className='img img-fluid mt-3' width={'400px'} src={'profile'} alt="my-image" />
+            <img style={{borderBottomLeftRadius:"90px",borderTopRightRadius:"90px"}} className='img img-fluid mt-3' width={'400px'} src={profile} alt="my-image" />
           </div>
         </div>
       </div>
@@ -238,7 +240,8 @@ const Landing = () => {
                       <h3 className='text-light fw-bolder text-center'>{selectedProject?.name}</h3>
                       <div className='row justify-content-evenly flex-wrap align-items-center mt-5 pt-5'>
                         <div className='col-md-6'>
-                          <img width={'100%'} className='img img-fluid' src={selectedProject?.img} alt="project-SS" />
+                          <video width={'100%'} controls autoPlay src={selectedProject?.video}></video>
+                          {/* <img width={'100%'} className='img img-fluid' src={selectedProject?.img} alt="project-SS" /> */}
                         </div>
                         <div className='col-md-6'>
                           <p className={myStyle.projectDesc}>{selectedProject?.description}</p>
@@ -282,7 +285,7 @@ const Landing = () => {
         </div>
         <div className='mt-5 row justify-content-center align-items-center'>
           <div style={{ textAlign: "center" }} className='col-lg-4'>
-            <img className='img img-fluid mt-3' width={'400px'} src={'profile'} alt="my-image" />
+            <img style={{borderBottomLeftRadius:"90px",borderTopRightRadius:"90px"}} className='img img-fluid mt-3' width={'400px'} src={profile} alt="my-image" />
           </div>
           <div className='col'></div>
           <div className='col-lg-7'>
