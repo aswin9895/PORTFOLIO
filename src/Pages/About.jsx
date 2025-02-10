@@ -1,6 +1,6 @@
 import React from 'react'
 import myStyle from '../Style.module.css'
-import profile from '../assets/profile.png'
+import profile from '../assets/profile.jpg'
 import cv from "../assets/ASWIN SASEENDRAN (MERN FULL STACK DEVELOPER) PROFESSIONAL_RESUME.pdf"
 
 const About = () => {
